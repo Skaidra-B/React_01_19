@@ -6,7 +6,6 @@ const Toolbar = ({getPage}) => {
 
     function toHome() {
             nav("/home")
-
     }
 
     return (
@@ -14,15 +13,12 @@ const Toolbar = ({getPage}) => {
             <div onClick={toHome}>logo</div>
             <div className="d-flex">
                 <div>
-                    {getPage !== "login" && <Link className="style" to="/login"><h2>Login</h2></Link>}
+                    {getPage !== "createPost" && <Link className="style" to="/createPost"><h2>Create posts</h2></Link>}
                 </div>
                 <div>
-                    {getPage !== "register" && <Link className="style" to="/register"><h2>Register</h2></Link> }
+                    {getPage !== "posts" && <Link className="style" to="/posts"><h2>Show posts</h2></Link> }
                 </div>
             </div>
-
-
-
         </div>
     );
 };
