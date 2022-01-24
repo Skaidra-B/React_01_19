@@ -46,7 +46,6 @@ const PostListPage = ({getPost, setPage, setPost, cities, city, titles}) => {
                 </select>
                 <input ref={input} type="text" placeholder="title"/>
                 <button onClick={filter}>Search</button>
-
             </div>
             <div className="d-flex">
                 {filtered.map((x, i) =>
